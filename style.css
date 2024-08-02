@@ -142,7 +142,7 @@ header .nav-con {
 /* carousel */
 
 #carousel {
-    width: 100%;
+    width: 100vw;
     height: 100vh;
     margin-top: -50px;
     position: relative;
@@ -154,7 +154,7 @@ header .nav-con {
 }
 
 #carousel .list .item img {
-    width: 100%;
+    width: 100vw;
     height: 100vh;
     object-fit: cover;
 }

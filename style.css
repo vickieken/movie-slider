@@ -573,10 +573,6 @@ header .nav-con {
         position: relative;
     }
 
-    #carousel .list .item .content {
-        padding-right: 0;
-    }
-
     #carousel .list .item .content .title {
         font-size: 25px;
     }
@@ -633,6 +629,19 @@ header .nav-con {
         font-size: 12px;
         position: relative;
         transition: all 1s ease-in-out;
+    }
+
+    /* Carousel */
+
+    #carousel .list .item .content {
+        position: absolute;
+        top: 50%;
+        max-width: 80%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        padding-right: 0;
+        box-sizing: border-box;
+        text-shadow: 0px 50px 10px #0004;
     }
 
     /* Thumbnail */

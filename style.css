@@ -302,7 +302,8 @@ header .nav-con {
     width: max-content;
     z-index: 100;
     display: flex;
-    gap: 20px   ;
+    gap: 20px;
+    overflow-x: hidden;
 }
 
 .thumbnail .item {

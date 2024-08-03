@@ -54,7 +54,13 @@ function showSlider(type) {
         navOption.classList.toggle('show-menu');
     });
 
-    navLink.addEventListener('click', ()=> {
+    $('.nav-link').click(()=> {
         barBtn.classList.remove('fa-times');
         navOption.classList.remove('show-menu');
+    });
+    
+    window.addEventListener("scroll", ()=> {
+        var header = document.querySelector("header");
+        var logo = document.querySelector(".logo");
+        header.classList.toggle("sticky", window.scrollY > 0);
     });

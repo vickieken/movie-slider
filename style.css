@@ -690,6 +690,30 @@ header .nav-con {
     }
 }
 
+@media screen and (max-width: 475px) {
+    #section-two .boxes .box {
+        flex: 0 1 auto;
+        width: 80%;
+        height: auto;
+        cursor: pointer;
+        margin-top: 35px;
+        transition: all 1s ease-in-out;
+    }
+
+    #section-two .boxes .box img {
+        width: 100%;
+        height: auto;
+        transition: all 1s ease-in-out;
+        object-fit: cover;
+        margin-bottom: 3px;
+    }
+
+    #section-two .boxes .box .box-text {
+        font-size: 12px;
+        text-align: center;
+    }
+}
+
 @media screen and (max-width: 500px) {
     body {
         position: relative;
@@ -779,8 +803,8 @@ header .nav-con {
     max-width: 100%;
     z-index: 100;
     display: flex;
-    gap: 20px;
-    overflow: hidden;
+    gap: 10px;
+    overflow-x: hidden;
     object-fit: cover;
 }
 

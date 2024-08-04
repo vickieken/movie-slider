@@ -39,7 +39,7 @@ header {
     position: fixed;
     top: 0;
     left: 0;
-    width: 100%;
+    width: 100vw;
     z-index: 1000;
     transition: all 1s ease-in-out;
 }
@@ -347,14 +347,14 @@ header .nav-con {
 .thumbnail {
     position: absolute;
     bottom: 50px;
-    left: 50%;
+    left: 30%;
     /* width: max-content; */
-    max-width: 100%;
+    max-width: 70%;
     z-index: 100;
     display: flex;
     gap: 20px;
     overflow: hidden;
-    max-width: 100%;
+    object-fit: cover;
 }
 
 .thumbnail .item {
@@ -800,11 +800,11 @@ header .nav-con {
     bottom: 50px;
     left: 43%;
     /* width: max-content; */
-    max-width: 100%;
+    max-width: 57%;
     z-index: 100;
     display: flex;
     gap: 10px;
-    overflow-x: hidden;
+    overflow: hidden;
     object-fit: cover;
 }
 

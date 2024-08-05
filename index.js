@@ -7,6 +7,10 @@ let navOption = document.querySelector('ul');
 var barBtn = document.querySelector('.fa-bars');
 let navLink = document.querySelector('.nav-link');
 
+let scrollContainer = document.querySelector(".carousel");
+let backBtn = document.querySelector(".fa-caret-left");
+let nextBtn = document.querySelector(".fa-caret-right");
+
 nextDom.addEventListener('click', ()=> {
     showSlider('next');
 });
@@ -58,9 +62,28 @@ function showSlider(type) {
         barBtn.classList.remove('fa-times');
         navOption.classList.remove('show-menu');
     });
+
+    // nav scroll effect
     
     window.addEventListener("scroll", ()=> {
         var header = document.querySelector("header");
         var logo = document.querySelector(".logo");
         header.classList.toggle("sticky", window.scrollY > 0);
     });
+
+    // for the fourth section scroll effect
+
+    // scrollContainer.addEventListener('wheel', (evt)=> {
+    //     evt.preventDefault();
+    //     scrollContainer.scrollLeft += evt.deltaX;
+    // })
+
+    nextBtn.addEventListener('click', ()=> {
+        scrollContainer.style.scrollBehavior = "smooth";
+        scrollContainer.scrollLeft += 200;
+    })
+
+    backBtn.addEventListener('click', ()=> {
+        scrollContainer.style.scrollBehavior = "smooth";
+        scrollContainer.scrollLeft -= 200;
+    })
